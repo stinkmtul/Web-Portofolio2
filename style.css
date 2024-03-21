@@ -1,0 +1,485 @@
+/* Global styles */
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+/* Hero section */
+.hero {
+    padding: 100px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+/* About Me section */
+.home {
+    padding: 50px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+/* Achievement section */
+.achievement {
+    padding: 100px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+/* Portfolio section */
+.projects {
+    padding: 100px 0;
+    color: #fff; /* Warna teks default */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+/* Contact Form section */
+.contact-form {
+    padding: 100px 0;
+    text-align: center;
+    border-radius: 20px; /* Menambahkan border-radius untuk membuat sudut elemen lebih lembut */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+/* Logo styling */
+.logo {
+    font-size: 1.5rem;
+    color: #333333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-grow: 1;
+}
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Pastikan elemen header berada di atas konten lain */
+    background-color: #3b82f6; /* Warna latar belakang header */
+    color: #ffffff; /* Warna teks header */
+    padding: 10px 0; /* Atur padding sesuai kebutuhan Anda */
+}
+
+.navbar a {
+    color: #333333;
+    text-decoration: none;
+    margin: 0 10px; /* Atur jarak antara setiap menu */
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #cccccc;
+}
+
+#dark-mode-toggle {
+    background-color: #333333; /* Warna latar belakang tombol dark mode */
+}
+/* Dark Mode */
+#dark-mode-toggle::before {
+    content: "\f186"; /* Unicode untuk simbol bulan */
+    font-family: "Font Awesome 5 Free";
+    color: #fff; /* Warna standar */
+}
+
+/* Warna simbol tombol dark mode ketika di mode gelap dan dihover */
+.dark-mode #dark-mode-toggle::before {
+    content: "\f185"; /* Unicode untuk simbol matahari */
+    color: #fff; /* Warna standar */
+}
+
+/* Additional styles */
+.hero-content p {
+    font-size: 1.3rem;
+}
+
+.social-media a:hover {
+    transform: scale(1.2);
+}
+
+.achievement .timeline-item {
+    transition: transform 0.3s ease;
+}
+
+.achievement .timeline-item:hover {
+    transform: translateY(-10px);
+}
+
+.project-item {
+    transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background-color: #ffffff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Hero section */
+.hero {
+    padding: 100px 0;
+    text-align: center;
+    height: 100vh; /* Menetapkan tinggi elemen hero menjadi 100% dari tinggi layar */
+    display: flex; /* Menggunakan display flex untuk mengatur konten ke tengah */
+    justify-content: center; /* Mengatur konten ke tengah secara horizontal */
+    align-items: center; /* Mengatur konten ke tengah secara vertikal */
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #666666;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #333333;
+    color: #ffffff;
+    font-size: 1.6rem;
+    line-height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.dark-mode .hero h1 {
+    color: #ffffff; /* Ubah warna teks judul */
+}
+
+.dark-mode .hero p {
+    color: #cccccc; /* Ubah warna teks paragraf */
+}
+
+.dark-mode .social-media a {
+    background-color: #ffffff; /* Ubah warna latar belakang ikon media sosial */
+    color: #1a1a1a; /* Ubah warna teks ikon media sosial */
+}
+
+/* About Me section */
+.home {
+    padding: 100px 0;
+}
+
+.home-img img {
+    margin-left: auto; /* Menggeser gambar ke kanan */
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+.home-content {
+    padding: 0 10px;
+}
+
+.heading {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333333; /* Warna teks standar */
+}
+
+.home-content p {
+    font-size: 1.1rem;
+    color: #666666; /* Warna teks standar */
+}
+
+.home-content h1,
+.home-content h2,
+.home-content h3 {
+    color: #333333; /* Warna teks standar */
+}
+
+.home-content span {
+    color: #666666; /* Warna teks standar */
+    font-weight: bold;
+}
+
+/* Dark mode styles */
+.dark-mode .home-content h1,
+.dark-mode .home-content h2,
+.dark-mode .home-content h3,
+.dark-mode .heading {
+    color: #fff; /* Warna teks untuk mode gelap */
+}
+
+/* Dark mode styles */
+.dark-mode .education-item {
+    background-color: #333333; /* Warna latar belakang */
+    color: #ffffff; /* Warna teks */
+}
+
+.dark-mode .education-item p {
+    color: #cccccc; /* Warna teks untuk mode gelap */
+}
+
+
+.dark-mode .home-content p {
+    color: #cccccc; /* Warna teks untuk mode gelap */
+}
+
+/* Light mode styles */
+.parallax .home-content p {
+    color: #666666; /* Warna teks standar */
+}
+
+/* Achievement section */
+.achievement {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.achievement .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #333333;
+}
+
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.timeline-item {
+    flex: 1;
+    padding: 30px;
+    margin: 0 10px; /* Tambahkan margin di sini */
+    background-color: #fff;
+    border-radius: 10%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.timeline-item:hover {
+    transform: translateY(-5px);
+}
+
+.timeline-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+.timeline-item p {
+    font-size: 1.1rem;
+    color: #666666;
+}
+
+.dark-mode .achievement .section-title{
+    color: #fff;
+}
+.dark-mode .timeline-item {
+    background-color: #333333; /* Warna latar belakang item */
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1); /* Ubah bayangan */
+}
+
+.dark-mode .timeline-item:hover {
+    transform: translateY(-5px);
+}
+
+.dark-mode .timeline-item h3,
+.dark-mode .timeline-item p {
+    color: #333333; /* Warna teks item */
+}
+
+/* Gaya untuk Portfolio section */
+.projects {
+    padding: 100px 0;
+    color: #fff; /* Warna teks default */
+}
+
+
+.project-title {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #333333; /* Warna judul default */
+    text-align: center;
+}
+
+.project-item {
+    margin-bottom: 40px;
+    overflow: hidden;
+    border-radius: 5%;
+}
+
+.project-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333333; /* Warna judul proyek default */
+    text-align: center;
+}
+
+.project-item p {
+    font-size: 1.1rem;
+    color: #333333; /* Warna deskripsi proyek default */
+    margin-bottom: 20px;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.slide {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    margin-right: 10px; /* Jarak antar gambar */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek elevasi */
+    transition: transform 0.3s ease; /* Efek transisi saat hover */
+    cursor: pointer; /* Mengubah kursor menjadi tanda untuk menunjukkan elemen dapat diinteraksi */
+}
+
+.slide img {
+    border-radius: 10px; /* Sudut bulat pada gambar */
+    width: 100%; /* Gambar mengisi lebar slide */
+    height: 250px; /* Mengatur tinggi sesuai proporsi gambar */
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    .projects {
+        color: #333333; /* Warna teks dark mode */
+    }
+
+    .dark-mode .project-title{
+        color: #fff;
+    }
+    .project-item h3 {
+        color: #333333; /* Warna judul dan deskripsi proyek dark mode */
+    }
+
+    .project-item p {
+        color: #333333; /* Warna deskripsi proyek dark mode */
+    }
+
+    .slide {
+        border: 2px solid #ffffff; /* Warna border slide dark mode */
+    }
+}
+
+.contact-form {
+    padding: 100px 0;
+    text-align: center;
+    border-radius: 10px; /* Menambahkan border-radius untuk membuat sudut elemen lebih lembut */
+}
+
+.contact-form .container {
+    max-width: 600px; /* Menyesuaikan lebar maksimum dengan konten */
+    margin: 0 auto; /* Pusatkan konten */
+    padding: 0 20px; /* Atur padding agar konten tidak terlalu dekat dengan pinggir */
+}
+
+.contact-form .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #333333; /* Warna judul default */
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333333; /* Warna label default */
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    color: #333333; /* Warna teks input default */
+    background-color: #ffffff; /* Warna latar belakang input default */
+}
+
+.form-group textarea {
+    height: 150px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #333333;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    background-color: #666666; /* Warna tombol dark mode */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    background-color: #333333;
+}
+
+
+.dark-mode .section-title,      
+.dark-mode .form-group label{
+    color: #fff;
+}
+
+.dark-mode .contact-form, 
+.dark-mode .form-group input,
+.dark-mode .form-group textarea {
+    color: #333333; /* Warna teks dan label dark mode */
+}
+
+.dark-mode button {
+    background-color: #666666; /* Warna tombol dark mode */
+    color: #ffffff; /* Warna teks tombol dark mode */
+}
+
+.dark-mode button:hover {
+    background-color: #333333; /* Warna hover tombol dark mode */
+}

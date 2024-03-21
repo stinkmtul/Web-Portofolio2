@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siti Nikmatul Ula</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+    <header class="header bg-blue-600 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <a href="#" class="logo text-2xl font-bold">Portfolio</a>
+            <nav class="navbar hidden md:flex">
+                <a href="#hero" class="active">Home</a>
+                <a href="#home">About Me</a>
+                <a href="#achievement">Achievement</a>
+                <a href="#projects">Portfolio</a>
+            </nav>
+            <button id="dark-mode-toggle" class="ml-auto px-3 py-1 bg-gray-200 rounded-full focus:outline-none"></button>
+        </div>        
+    </header>
+    <section class="hero py-16" id="hero">
+        <div class="container mx-auto">
+            <div class="hero-content text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Selamat Datang!</h1>
+                <p class="text-lg md:text-xl mb-8">Aku adalah seorang programmer junior dengan keahlian dalam menciptakan solusi yang sederhana dan menarik. Aku senang untuk menciptakan solusi yang inovatif untuk masalah digital.</p>
+                <div class="social-media">
+                    <a href="https://instagram.com/stinkmtul" class="bx bxl-instagram text-4xl mx-2"></a>
+                    <a href="https://github.com/stinkmtul" class="bx bxl-github text-4xl mx-2"></a>
+                    <a href="https://www.linkedin.com/in/stinkmtul/" class="bx bxl-linkedin text-4xl mx-2"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="home py-16" id="home">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <div class="home-content md:w-1/2">
+                <div class="home-edu bg-grey-600 text-white p-6 rounded-lg mb-8">
+                    <h2 class="heading text-4xl md:text-5xl mb-6">About <span>Me</span></h2>
+                    <h3 class="text-2xl font-bold mb-4">Halo! ini aku,</h3>
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">Siti Nikmatul Ula</h1>
+                    <p class="text-lg md:text-xl mb-8">Aku memiliki minat pada dunia teknologi, oleh karena itu aku ingin menyelami <span class="font-bold">berbagai bidang dalam IT</span> dan terus <span class="font-bold">mengembangkan</span> keterampilanku dibidang pemrograman.</p>
+                </div>
+                <div class="parallax">
+                    <div class="education container">
+                        <h2 class="heading text-4xl md:text-5xl mb-6">My <span>Education</span></h2>
+                        <div class="education-list flex flex-col md:flex-row">
+                            <div class="education-item bg-white p-6 rounded-lg shadow-md mb-4 md:mr-4">
+                                <p class="text-lg mb-2">2022 - Now</p>
+                                <p class="text-lg font-bold mb-2">Universitas Mulawarman</p>
+                                <p class="text-lg">Prodi Sistem Informasi</p>
+                            </div>
+                            <div class="education-item bg-white p-6 rounded-lg shadow-md">
+                                <p class="text-lg mb-2">2019 - 2022</p>
+                                <p class="text-lg font-bold mb-2">SMKN 7 Samarinda</p>
+                                <p class="text-lg">Rekayasa Perangkat Lunak</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="home-img md:w-1/2">
+                <img src="img/siti.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="achievement" class="achievement py-16">
+        <div class="container mx-auto">
+            <h2 class="section-title text-4xl md:text-5xl mb-8">My <span>Achievement</span></h2>
+            <div class="timeline flex flex-col md:flex-row">
+                <div class="timeline-item md:w-1/3 mb-8">
+                    <div class="content1 bg-gray-100 p-6 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold mb-4">Cerdas Cermat</h3>
+                        <p class="text-lg mb-4">Telah berkontribusi secara aktif dalam kelas dengan mewakili sebagai anggota tim dalam kompetisi cerdas cermat pada class meeting</p>
+                        <img src="img/siti3.png" alt="Sertifikat" class="mx-auto">
+                    </div>
+                </div>
+                <div class="timeline-item md:w-1/3 mb-8">
+                    <div class="content1 bg-gray-100 p-6 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold mb-4">Asisten Praktikum</h3>
+                        <p class="text-lg mb-4">Memiliki pengalaman sebagai asisten praktikum selama satu semester.</p>
+                        <img src="img/siti2.png" alt="Sertifikat Aslab" class="mx-auto">
+                    </div>
+                </div>
+                <div class="timeline-item md:w-1/3">
+                    <div class="content1 bg-gray-100 p-6 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold mb-4">PJ Lomba</h3>
+                        <p class="text-lg mb-4">Memiliki pengalaman sebagai Penanggung Jawab (PJ) dalam suatu event yang diselenggarakan oleh himpunan</p>
+                        <img src="img/siti4.jpg" alt="Sertifikat" class="mx-auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projects py-16" id="projects">
+        <div class="container mx-auto">
+            <h2 class="project-title text-4xl md:text-5xl mb-8">Project <span>Portfolio</span></h2>
+            <div class="project-list grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="project-item bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold mb-4">Project Ukk</h3>
+                    <p class="text-lg mb-4">Project ini adalah sebuah aplikasi pencatatan perjalanan pengguna berbasis web yang dibangun menggunakan bahasa pemrograman HTML, CSS, JavaScript, dan PHP. Dalam aplikasi ini, data perjalanan pengguna disimpan dalam format teks (TXT) sebagai basis data.</p>
+                    <div class="carousel flex justify-center items-center">
+                        <div class="slide"><img src="img/portofolio/ukk1.png" alt="UKK Catatan Perjalanan"></div>
+                        <div class="slide"><img src="img/portofolio/ukk2.png" alt="UKK Catatan Perjalanan"></div>
+                        <div class="slide"><img src="img/portofolio/ukk3.png" alt="UKK Catatan Perjalanan"></div>
+                    </div>
+                </div>
+                <div class="project-item bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold mb-4">PPOB PDAM</h3>
+                    <p class="text-lg mb-4">Proyek ini adalah sebuah sistem Payment Point Online Banking (PPOB) yang bertujuan untuk mempermudah proses pembayaran tagihan air PDAM secara online. Dikembangkan menggunakan sejumlah bahasa pemrograman web seperti HTML, CSS, JavaScript, dan PHP, serta menggunakan MySQL sebagai basis data.</p>
+                    <div class="carousel flex justify-center items-center">
+                        <div class="slide"><img src="img/portofolio/ppob1.png" alt="PPOB PDAM"></div>
+                        <div class="slide"><img src="img/portofolio/ppob2.png" alt="PPOB PDAM"></div>
+                        <div class="slide"><img src="img/portofolio/ppob3.png" alt="PPOB PDAM"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-form py-20">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <form id="contact-form" class="form" method="post" action="">
+                <div class="form-group mb-4">
+                    <label for="name" class="block text-gray-700">Name</label>
+                    <input type="text" id="name" name="name" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500">
+                    <div id="name-error" class="error"></div>
+                </div>
+                <div class="form-group mb-4">
+                    <label for="email" class="block text-gray-700">Email</label>
+                    <input type="email" id="email" name="email" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500">
+                    <div id="email-error" class="error"></div>
+                </div>
+                <div class="form-group mb-4">
+                    <label for="message" class="block text-gray-700">Message</label>
+                    <textarea id="message" name="message" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"></textarea>
+                    <div id="message-error" class="error"></div>
+                </div>
+                <button type="submit" class="px-4 py-2 text-white rounded-lg">Submit</button>
+            </form>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script>
+        // Dark mode toggle
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+        const body = document.body;
+
+        darkModeToggle.addEventListener('click', function() {
+            body.classList.toggle('dark-mode');
+            const isDarkMode = body.classList.contains('dark-mode');
+            localStorage.setItem('darkMode', isDarkMode);
+        });
+
+        // Check local storage for dark mode preference
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        }
+
+        // Form submission and validation
+        const contactForm = document.getElementById('contact-form');
+
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            if (validateForm()) {
+                // If form is valid, submit the form
+                const formData = new FormData(this);
+                const formDataEntries = Array.from(formData.entries());
+                const formDataObject = Object.fromEntries(formDataEntries);
+                // Replace standard alert with SweetAlert2
+                Swal.fire({
+                    title: 'Terkirim!',
+                    html: `
+                        <p><strong>Name:</strong> ${formDataObject.name}</p>
+                        <p><strong>Email:</strong> ${formDataObject.email}</p>
+                        <p><strong>Message:</strong> ${formDataObject.message}</p>
+                    `,
+                    icon: 'success',
+                    confirmButtonText: 'Kembali'
+                }).then(() => {
+                // Reset form after user clicks "Kembali"
+                contactForm.reset();
+            });
+        }
+
+        });
+
+        function validateForm() {
+            let isValid = true;
+
+            // Validate name
+            const nameInput = document.getElementById('name');
+            const nameError = document.getElementById('name-error');
+            if (nameInput.value.trim() === '') {
+                nameError.textContent = 'Name is required';
+                isValid = false;
+            } else {
+                nameError.textContent = '';
+            }
+
+            // Validate email
+            const emailInput = document.getElementById('email');
+            const emailError = document.getElementById('email-error');
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(emailInput.value)) {
+                emailError.textContent = 'Please enter a valid email address';
+                isValid = false;
+            } else {
+                emailError.textContent = '';
+            }
+
+            // Validate message
+            const messageInput = document.getElementById('message');
+            const messageError = document.getElementById('message-error');
+            if (messageInput.value.trim() === '') {
+                messageError.textContent = 'Message is required';
+                isValid = false;
+            } else {
+                messageError.textContent = '';
+            }
+
+            return isValid;
+        }
+    </script>
+</body>
+</html>
