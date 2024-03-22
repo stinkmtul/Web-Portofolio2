@@ -336,11 +336,10 @@ body {
     color: #fff; /* Warna teks default */
 }
 
-.project span {
+.projects span {
     color: #666666; /* Warna teks standar */
     font-weight: bold;
 }
-
 
 .project-title {
     font-size: 2.5rem;
