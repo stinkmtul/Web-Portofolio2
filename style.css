@@ -260,6 +260,12 @@ body {
     color: #666666; /* Warna teks standar */
 }
 
+/* Animasi saat kursor diarahkan ke elemen pendidikan */
+.parallax .education-item:hover {
+    transform: translateY(-5px); /* Geser elemen ke atas sebanyak 5px */
+    transition: transform 0.3s ease; /* Efek transisi */
+}
+
 /* Achievement section */
 .achievement {
     padding: 100px 0;
