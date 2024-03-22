@@ -254,7 +254,6 @@ body {
 .dark-mode .home-content p {
     color: #cccccc; /* Warna teks untuk mode gelap */
 }
-
 /* Light mode styles */
 .parallax .home-content p {
     color: #666666; /* Warna teks standar */
