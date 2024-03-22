@@ -42,7 +42,7 @@
                 <div class="home-edu bg-grey-600 text-white p-6 rounded-lg mb-8">
                     <h2 class="heading text-4xl md:text-5xl mb-6">About <span>Me</span></h2>
                     <h3 class="text-2xl font-bold mb-4">Halo! ini aku,</h3>
-                    <h1 class="text-4xl md:text-5xl font-bold mb-6">Siti Nikmatul Ula</h1>
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6" id="typed-text">Siti Nikmatul Ula</h1>
                     <p class="text-lg md:text-xl mb-8">Aku memiliki minat pada dunia teknologi, oleh karena itu aku ingin menyelami <span class="font-bold">berbagai bidang dalam IT</span> dan terus <span class="font-bold">mengembangkan</span> keterampilanku dibidang pemrograman.</p>
                 </div>
                 <div class="parallax">
@@ -146,6 +146,39 @@
     </section>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script>
+        // Mendapatkan elemen teks
+        const typedText = document.getElementById('typed-text');
+
+        // Daftar kata-kata yang akan diketik
+        const words = ['S', 'Si', 'Sit', 'Siti', 'Siti ', 'Siti N', 'Siti Ni', 'Siti Nik', 'Siti Nikm', 'Siti Nikma', 'Siti Nikmat', 'Siti Nikmatu', 'Siti Nikmatul', 'Siti Nikmatul ', 'Siti Nikmatul U', 'Siti Nikmatul Ul', 'Siti Nikmatul Ula'];
+
+        // Variabel untuk menghitung indeks kata saat ini
+        let wordIndex = 0;
+
+        // Variabel untuk menyimpan id interval animasi
+        let timer;
+
+        // Fungsi untuk menampilkan kata berikutnya
+        function typeNextWord() {
+            // Memperbarui teks sesuai dengan kata berikutnya di array
+            typedText.textContent = words[wordIndex++];
+            // Jika kita telah mencapai kata terakhir, atur ulang indeks kata ke nol
+            if (wordIndex === words.length) {
+                wordIndex = 0;
+            }
+        }
+
+        // Memulai animasi mengetik
+        function startTypingAnimation() {
+            // Hentikan animasi jika sudah berjalan
+            clearInterval(timer);
+            // Mulai animasi dengan interval 200 milidetik (0.2 detik)
+            timer = setInterval(typeNextWord, 200);
+        }
+
+        // Memanggil fungsi untuk memulai animasi
+        startTypingAnimation();
+        
         // Dark mode toggle
         const darkModeToggle = document.getElementById('dark-mode-toggle');
         const body = document.body;
