@@ -228,11 +228,6 @@
                 // Replace standard alert with SweetAlert2
                 Swal.fire({
                     title: 'Terkirim!',
-                    html: `
-                        <p><strong>Name:</strong> ${formDataObject.name}</p>
-                        <p><strong>Email:</strong> ${formDataObject.email}</p>
-                        <p><strong>Message:</strong> ${formDataObject.message}</p>
-                    `,
                     icon: 'success',
                     confirmButtonText: 'Kembali'
                 }).then(() => {
